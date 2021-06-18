@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/register"
+           android:layout_width="180dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="32dp"
+           android:text="Register"
+           android:textSize="25dp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.497"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <EditText
+           android:id="@+id/editName"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:hint="Name"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/register" />
+
+       <EditText
+           android:id="@+id/editPhoneNo"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:ems="10"
+           android:hint="Phone No"
+           android:inputType="phone"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+       <EditText
+           android:id="@+id/editEmailId"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:ems="10"
+           android:hint="Email-ID"
+           android:inputType="textEmailAddress"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editPhoneNo" />
+
+       <EditText
+           android:id="@+id/editPassword"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:ems="10"
+           android:hint="Password"
+           android:inputType="textPassword"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editEmailId" />
+
+       <EditText
+           android:id="@+id/editAddress"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:ems="10"
+           android:hint="Address Line1"
+           android:inputType="textPostalAddress"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+       <EditText
+           android:id="@+id/editTextArea"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:ems="10"
+           android:hint="Area"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editAddress" />
+
+       <EditText
+           android:id="@+id/editPin"
+           android:hint="Pincode"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:ems="10"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editTextArea" />
+
+       <EditText
+           android:id="@+id/editCity"
+           android:hint="City"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:ems="10"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editPin" />
+
+       <EditText
+           android:id="@+id/editLandmark"
+           android:hint="Landmark"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:ems="10"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editCity" />
+
+       <Button
+           android:id="@+id/buttonSignUp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:text="Sign Up"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editLandmark"
+           app:layout_constraintVertical_bias="0.196" />
+
+       <TextView
+           android:id="@+id/tv_alreadyhaveaccount"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginRight="16dp"
+           android:text="Already have an account? Sign In!"
+           android:textSize="25dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/buttonSignUp" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
